@@ -85,18 +85,18 @@ config.method = 'neuralnet'
 //  }
 //}
 config.ranges = {
-  threshold_buy = 1.0,
-  threshold_sell = -1.0,
-  method = 'adadelta',
+  threshold_buy : 1.0,
+  threshold_sell : -1.0,
+  method : 'adadelta',
 
-  learning_rate = 1.2,
-  momentum = 0.9,
-  decay = 0.10,
-  stoploss_enabled = true|false,
-  stoploss_threshold = 0.90,
-  hodl_threshold = 1,
-  price_buffer_len = 100,
-  min_predictions = 1000
+  learning_rate : 1.2,
+  momentum : 0.9,
+  decay : 0.10,
+  stoploss_enabled : true|false,
+  stoploss_threshold : 0.90,
+  hodl_threshold : 1,
+  price_buffer_len : 100,
+  min_predictions : 1000
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
