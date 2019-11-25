@@ -5,12 +5,12 @@ const config = {}
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Name of batch (will show up in generated csv's file name )
-config.name = 'My'
+config.name = 'Bifinex'
 
 // Save results to csv
 config.saveToCsv = true
 
-config.gekkoPath = '../gekko/'
+config.gekkoPath = '../app/'
 config.gekkoConfigFileName = 'config.js'
 
 // URL that serving Gekko UI
@@ -26,18 +26,14 @@ config.historySizes = [10, 15]
 
 // Format: [exchange, currency, asset]
 config.tradingPairs = [
-  ['binance', 'usdt', 'btc'],
-  ['poloniex', 'eth', 'zec']
+  ['bitfinex', 'usd', 'btc']
 ]
 
 // Note: only one daterange for "import" mode allowed if parallelQueries > 1
 // It's related to constraints with database
 config.dateranges = [{
-  from: '2018-06-05 00:00',
-  to: '2018-07-05 00:00'
-}, {
-  from: '2018-06-05 00:00',
-  to: '2018-07-30 00:00'
+  from: '2019-02-24 00:00',
+  to: '2019-11-22 00:00'
 }]
 
 // Shuffle generated combinations of method's configs
