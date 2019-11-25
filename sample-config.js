@@ -11,7 +11,7 @@ config.name = 'Bifinex'
 config.saveToCsv = true
 
 config.gekkoPath = '../app/'
-config.gekkoConfigFileName = 'config.js'
+config.gekkoConfigFileName = 'sample-config.js'
 
 // URL that serving Gekko UI
 config.apiUrl = 'http://localhost:3000'
