@@ -63,7 +63,7 @@ config.configPriorityLocations = ['batcher', 'gekko', 'gekko-toml']
 //                          BACKTEST BATCHER
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-config.methods = ['RSI', 'MACD', 'StochRSI', 'CCI']
+config.methods = ['neuralnet']
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //                          BRUTEFORCE SEARCHER
