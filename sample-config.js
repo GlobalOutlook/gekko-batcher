@@ -70,18 +70,33 @@ config.methods = ['RSI', 'MACD', 'StochRSI', 'CCI']
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Specify strategy you want for bruteforce
-config.method = 'RSI'
+//config.method = 'RSI'
+config.method = 'neuralnet'
 
 // Specify ranges settings for the given method. It generates all
 // possible combinations of a set of settings with given ranges
 // Format for range: 'start:step:end' or 'true|false'
+//config.ranges = {
+//  interval: '8:1:10',
+//  thresholds: {
+//    low: '24:1:26',
+//    high: '70:1:80',
+//    persistence: 1
+//  }
+//}
 config.ranges = {
-  interval: '8:1:10',
-  thresholds: {
-    low: '24:1:26',
-    high: '70:1:80',
-    persistence: 1
-  }
+  threshold_buy = 1.0,
+  threshold_sell = -1.0,
+  method = 'adadelta',
+
+  learning_rate = 1.2,
+  momentum = 0.9,
+  decay = 0.10,
+  stoploss_enabled = true|false,
+  stoploss_threshold = 0.90,
+  hodl_threshold = 1,
+  price_buffer_len = 100,
+  min_predictions = 1000
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
